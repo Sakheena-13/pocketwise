@@ -1,0 +1,226 @@
+/* PocketWise responsive layout */
+
+/* Smaller laptops and tablets */
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 28px 24px 18px;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .main-content {
+    margin-left: 220px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .content-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .simulator-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Tablets and narrow screens */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding: 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .brand {
+    padding: 0 4px;
+  }
+
+  .sidebar-label {
+    margin: 20px 4px 10px;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+
+  .nav-item {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 9px 11px;
+    white-space: nowrap;
+  }
+
+  .nav-item span {
+    width: auto;
+  }
+
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 22px 16px 15px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .topbar-actions {
+    flex-wrap: wrap;
+  }
+
+  .welcome-banner {
+    min-height: 150px;
+    padding: 24px;
+  }
+
+  .banner-decoration {
+    width: 75px;
+    height: 75px;
+    margin-right: 0;
+    font-size: 42px;
+  }
+
+  .panel {
+    padding: 19px;
+  }
+
+  .health-details-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  .main-content {
+    padding: 18px 12px 12px;
+  }
+
+  .topbar h1 {
+    font-size: 25px;
+  }
+
+  .topbar-actions {
+    width: 100%;
+  }
+
+  .day-badge {
+    font-size: 9px;
+  }
+
+  .topbar-actions .primary-button {
+    flex: 1;
+  }
+
+  .welcome-banner {
+    padding: 21px 17px;
+  }
+
+  .welcome-banner h2 {
+    font-size: 21px;
+  }
+
+  .welcome-banner p:not(.eyebrow) {
+    font-size: 12px;
+  }
+
+  .banner-decoration {
+    display: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .stat-card {
+    padding: 15px 12px;
+  }
+
+  .stat-card h2 {
+    font-size: 21px;
+  }
+
+  .stat-note {
+    font-size: 10px;
+  }
+
+  .content-grid {
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .panel {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .panel-heading {
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 17px;
+  }
+
+  .panel-heading h3,
+  .panel h3 {
+    font-size: 15px;
+  }
+
+  .transaction-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .transaction-row {
+    gap: 9px;
+  }
+
+  .transaction-info strong,
+  .transaction-amount {
+    font-size: 12px;
+  }
+
+  .section-intro h2 {
+    font-size: 23px;
+  }
+
+  .goals-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .result-metrics {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .app-footer {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .app-dialog {
+    padding: 19px;
+  }
+
+  .dialog-actions {
+    flex-wrap: wrap;
+  }
+}
